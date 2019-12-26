@@ -1,0 +1,26 @@
+"firefox"
+	Mod1 + q
+
+"pavucontrol"
+	Mod1 + a
+
+"cd pics/screenshots && scrot"
+	Print
+
+"st"
+	Mod1 + Shift + Return
+
+"xkill"
+	Mod1 + c
+
+"redshift -O 3000k"
+	Mod1 + r
+
+"redshift -x"
+	Mod1 + x
+
+"pulseaudio --kill"
+	Mod1 + e
+
+"vmware-view"
+	Mod1 + v
