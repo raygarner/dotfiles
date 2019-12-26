@@ -1,0 +1,14 @@
+xbindkeys
+
+loadkeys uk
+
+feh --bg-scale /home/ray/pics/papes/lillypond.jpg
+
+compton --no-fading-openclose &
+
+while xsetroot -name " CPU Usage: `top -b -n 1 | grep Cpu | awk '{print 100-$8}'`% | RAM Space: `free -h G --si | grep Mem | awk '{print $4}'` | Disk Space: `df -H --total | grep total | awk '{print $4}'` | `date +%H:%M:%S` `date +%d/%m/%y` | `whoami`@`cat /etc/hostname` "
+do
+	sleep 1
+done &
+
+exec dwm
