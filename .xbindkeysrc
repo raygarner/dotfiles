@@ -20,7 +20,7 @@
 	Mod1 + x
 
 "pulseaudio --kill"
-	Mod1 + e
+	Mod1 + k
 
-"vmware-view"
-	Mod1 + v
+"thunderbird"
+	Mod1 + e
