@@ -16,9 +16,6 @@
 "redshift -x"
 	Mod1 + x
 
-"pulseaudio --kill"
-	Mod1 + k
-
 "thunderbird"
 	Mod1 + e
 
