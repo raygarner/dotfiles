@@ -1,9 +1,6 @@
 "firefox"
 	Mod1 + q
 
-"pavucontrol"
-	Mod1 + a
-
 "cd pics/screenshots && scrot"
 	Print
 
@@ -24,3 +21,9 @@
 
 "thunderbird"
 	Mod1 + e
+
+"ardour5"
+	Mod1 + a
+
+"gimp"
+	Mod1 + g
