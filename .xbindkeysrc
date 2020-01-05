@@ -27,3 +27,6 @@
 
 "musescore"
 	Mod1 + s
+
+"slock"
+	Mod1 + z
