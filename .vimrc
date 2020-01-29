@@ -1,9 +1,11 @@
 set number
 syntax on
+filetype plugin indent on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
+set expandtab
 set mouse=a
 set clipboard=unnamedplus
 vnoremap <C-c> "+y
