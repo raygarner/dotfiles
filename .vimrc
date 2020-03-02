@@ -17,3 +17,6 @@ au BufNewFile,BufRead *.md set spell
 hi clear SpellBad
 hi SpellBad cterm=underline
 hi SpellBad ctermfg=red
+set background=dark
+colorscheme gruvbox-material
+
