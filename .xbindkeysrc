@@ -1,7 +1,7 @@
 "brave"
 	Mod1 + q
 
-"cd pics/screenshots && scrot"
+"cd pics/screenshots && scrot -p"
 	Print
 
 "st"
