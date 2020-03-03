@@ -3,7 +3,6 @@ syntax on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set autoindent
 set expandtab
 set mouse=a
 set clipboard=unnamedplus
@@ -19,4 +18,3 @@ hi SpellBad cterm=underline
 hi SpellBad ctermfg=red
 set background=dark
 colorscheme gruvbox-material
-
