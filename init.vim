@@ -22,6 +22,9 @@ hi SpellBad ctermfg=red
 set background=dark
 colorscheme gruvbox-material
 
+"remove autocommenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 "inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 "vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
@@ -87,3 +90,5 @@ au BufNewFile,BufRead *.html nnoremap ;yl i<font color="yellow"></font><Esc>F>a
 au BufNewFile,BufRead *.html nnoremap ;dt i<dt></dt><Enter><dd><++></dd><Enter><++><esc>2kcit
 au BufNewFile,BufRead *.html nnoremap ;dl i<dl><Enter><Enter></dl><enter><enter><++><esc>3kcc
 au BufNewFile,BufRead *.html nnoremap ;<space> i&amp;<space>
+
+
