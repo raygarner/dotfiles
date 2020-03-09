@@ -1,5 +1,7 @@
 xbindkeys
 
+setxkbmap -option caps:escape
+
 loadkeys uk
 
 feh --bg-scale /home/ray/pics/papes/lillypond.jpg
