@@ -9,18 +9,29 @@ set shiftwidth=4
 set expandtab
 set mouse=a
 set clipboard=unnamedplus
+
+"copy and pasting
 vnoremap <C-c> "+y
 map <C-p> "+p
+
 filetype detect
 au BufNewFile,BufRead *.ms set filetype=groff
 au BufNewFile,BufRead *.ms set spell
 au BufNewFile,BufRead *.tex set spell
 au BufNewFile,BufRead *.md set spell
+
+"underline in red spelling errors
 hi clear SpellBad
 hi SpellBad cterm=underline
 hi SpellBad ctermfg=red
+
+"delete trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
+
 set background=dark
 colorscheme gruvbox-material
+set splitbelow splitright "split puts window on right
+set wildmode=longest,list,full "enable autocomplete
 
 "remove autocommenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -30,9 +41,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 
-
 "tex macros
-au BufNewFile,BufRead *.tex nnoremap ;fr i\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
+au BufNewFile,BufRead *.tex nnoremap ;fr i\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}
 au BufNewFile,BufRead *.tex nnoremap ;fi i\begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 au BufNewFile,BufRead *.tex nnoremap ;exe i\begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
 au BufNewFile,BufRead *.tex nnoremap ;em i\emph{}<++><Esc>T{i
