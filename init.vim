@@ -25,13 +25,14 @@ colorscheme gruvbox-material
 "remove autocommenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+"press space twice to jump to guide
 "inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 "vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 
 
-"tex
-au BufNewFile,BufRead *.tex nnoremap ;fr i\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}
+"tex macros
+au BufNewFile,BufRead *.tex nnoremap ;fr i\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
 au BufNewFile,BufRead *.tex nnoremap ;fi i\begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 au BufNewFile,BufRead *.tex nnoremap ;exe i\begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
 au BufNewFile,BufRead *.tex nnoremap ;em i\emph{}<++><Esc>T{i
@@ -67,7 +68,7 @@ au BufNewFile,BufRead *.tex nnoremap ;nu i$\varnothing$
 au BufNewFile,BufRead *.tex nnoremap ;col i\begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 au BufNewFile,BufRead *.tex nnoremap ;rn (\ref{})<++><Esc>F}i
 
-"html
+"html macros
 au BufNewFile,BufRead *.html nnoremap ;b i<b></b><Space><++><Esc>FbT>i
 au BufNewFile,BufRead *.html nnoremap ;it i<em></em><Space><++><Esc>FeT>i
 au BufNewFile,BufRead *.html nnoremap ;1 i<h1></h1><Enter><Enter><++><Esc>2kf<i
