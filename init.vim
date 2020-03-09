@@ -15,8 +15,8 @@ vnoremap <C-c> "+y
 map <C-p> "+p
 
 filetype detect
-au BufNewFile,BufRead *.ms set filetype=groff
-au BufNewFile,BufRead *.ms set spell
+au BufNewFile,BufRead *.ms,*.me,*.mom,*.man set filetype=groff
+au FileType groff set spell
 au BufNewFile,BufRead *.tex set spell
 au BufNewFile,BufRead *.md set spell
 
@@ -30,7 +30,9 @@ autocmd BufWritePre * %s/\s\+$//e
 
 set background=dark
 colorscheme gruvbox-material
+
 set splitbelow splitright "split puts window on right
+
 set wildmode=longest,list,full "enable autocomplete
 
 "remove autocommenting
