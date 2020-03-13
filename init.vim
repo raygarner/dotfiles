@@ -25,6 +25,12 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 hi SpellBad ctermfg=red
 
+"split navigation shortcuts
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 "delete trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
