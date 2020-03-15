@@ -53,7 +53,13 @@ nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;e a\end{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\title{<++>}<Enter>\date{<++>}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>6k$i
+au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;s3 a\subsubsection{}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;s4 a\subsubsubsection{}<Esc>i
 "au BufNewFile,BufRead *.tex nnoremap ;fr a\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
+
 "au BufNewFile,BufRead *.tex nnoremap ;fi a\begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 "au BufNewFile,BufRead *.tex nnoremap ;exe a\begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
 "au BufNewFile,BufRead *.tex nnoremap ;em a\emph{}<++><Esc>T{i
