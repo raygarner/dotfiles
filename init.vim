@@ -14,6 +14,11 @@ set clipboard=unnamedplus
 vnoremap <C-c> "+y
 map <C-p> "+p
 
+"remember position in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 filetype detect
 au BufNewFile,BufRead *.ms,*.me,*.mom,*.man set filetype=groff
 au FileType groff set spell
