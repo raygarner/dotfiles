@@ -55,8 +55,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 
 "tex macros
-au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Esc>i
-au BufNewFile,BufRead *.tex nnoremap ;e a\end{}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>5k$i
 au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\title{<++>}<Enter>\date{<++>}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>6k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
