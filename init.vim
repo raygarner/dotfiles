@@ -54,9 +54,11 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 
+nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
+
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>5k$i
-au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\title{<++>}<Enter>\date{<++>}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>6k$i
+au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>8k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
