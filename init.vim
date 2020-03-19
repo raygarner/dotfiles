@@ -57,7 +57,7 @@ nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 
 "tex macros
-au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>5k$i
+au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
 au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>8k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
@@ -67,43 +67,6 @@ au BufNewFile,BufRead *.tex nnoremap ;s4 a\subsubsubsection{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;p1 a\paragraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;p2 a\subparagraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;pi a\begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=0.8\textwidth]{img/}<Enter>\caption{<++>}<Enter>\end{figure}<Enter><Enter><++><Esc>4k$i
-
-"au BufNewFile,BufRead *.tex nnoremap ;fr a\begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
-
-"au BufNewFile,BufRead *.tex nnoremap ;fi a\begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
-"au BufNewFile,BufRead *.tex nnoremap ;exe a\begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
-"au BufNewFile,BufRead *.tex nnoremap ;em a\emph{}<++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;bf a\textbf{}<++><Esc>T{i
-"au BufNewFile,BufRead *.tex vnoremap ; <ESC>`<i\{<ESC>`>2la}<ESC>?\\{<Enter>a
-"au BufNewFile,BufRead *.tex nnoremap ;it a\textit{}<++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;ct a\textcite{}<++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;cp a\parencite{}<++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;glos a{\gll<Space><++><Space>\\<Enter><++><Space>\\<Enter>\trans{``<++>''}}<Esc>2k2bcw
-"au BufNewFile,BufRead *.tex nnoremap ;x a\begin{xlist}<Enter>\ex<Space><Enter>\end{xlist}<Esc>kA<Space>
-"au BufNewFile,BufRead *.tex nnoremap ;ol a\begin{enumerate}<Enter><Enter>\end{enumerate}<Enter><Enter><++><Esc>3kA\item<Space>
-"au BufNewFile,BufRead *.tex nnoremap ;ul a\begin{itemize}<Enter><Enter>\end{itemize}<Enter><Enter><++><Esc>3kA\item<Space>
-"au BufNewFile,BufRead *.tex nnoremap ;li a<Enter>\item<Space>
-"au BufNewFile,BufRead *.tex nnoremap ;ref a\ref{}<Space><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;tab a\begin{tabular}<Enter><++><Enter>\end{tabular}<Enter><Enter><++><Esc>4kA{}<Esc>i
-"au BufNewFile,BufRead *.tex nnoremap ;ot \abegin{tableau}<Enter>\inp{<++>}<Tab>\const{<++>}<Tab><++><Enter><++><Enter>\end{tableau}<Enter><Enter><++><Esc>5kA{}<Esc>i
-"au BufNewFile,BufRead *.tex nnoremap ;can a\cand{}<Tab><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;con a\const{}<Tab><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;v a\vio{}<Tab><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;a a\href{}{<++>}<Space><++><Esc>2T{i
-"au BufNewFile,BufRead *.tex nnoremap ;sc a\textsc{}<Space><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;chap a\chapter{}<Enter><Enter><++><Esc>2kf}i
-"au BufNewFile,BufRead *.tex nnoremap ;sec a\section{}<Enter><Enter><++><Esc>2kf}i
-"au BufNewFile,BufRead *.tex nnoremap ;ssec a\subsection{}<Enter><Enter><++><Esc>2kf}i
-"au BufNewFile,BufRead *.tex nnoremap ;sssec a\subsubsection{}<Enter><Enter><++><Esc>2kf}i
-"au BufNewFile,BufRead *.tex nnoremap ;st a<Esc>F{i*<Esc>f}i
-"au BufNewFile,BufRead *.tex nnoremap ;beg a\begin{DELRN}<Enter><++><Enter>\end{DELRN}<Enter><Enter><++><Esc>4k0fR:MultipleCursorsFind<Space>DELRN<Enter>c
-"au BufNewFile,BufRead *.tex nnoremap ;up a<Esc>/usepackage<Enter>o\usepackage{}<Esc>i
-"au BufNewFile,BufRead *.tex nnoremap ;up a/usepackage<Enter>o\usepackage{}<Esc>i
-"au BufNewFile,BufRead *.tex nnoremap ;tt a\texttt{}<Space><++><Esc>T{i
-"au BufNewFile,BufRead *.tex nnoremap ;bt a{\blindtext}
-"au BufNewFile,BufRead *.tex nnoremap ;nu a$\varnothing$
-"au BufNewFile,BufRead *.tex nnoremap ;col a\begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
-"au BufNewFile,BufRead *.tex nnoremap ;rn (\ref{})<++><Esc>F}i
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;b a<b></b><Space><++><Esc>FbT>i
