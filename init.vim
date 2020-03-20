@@ -72,6 +72,21 @@ au BufNewFile,BufRead *.tex nnoremap ;p2 a\subparagraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;pi a\begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=0.8\textwidth]{img/}<Enter>\caption{<++>}<Enter>\end{figure}<Enter><Enter><++><Esc>4k$i
 
 "html macros
+au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><head><Enter><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
+au BufNewFile,BufRead *.html nnoremap ;p a<p></p><Enter><Enter><++><Esc>2ki
+au BufNewFile,BufRead *.html nnoremap ;h1 a<h1></h1><Enter><Enter><++><Esc>2k02wa
+au BufNewFile,BufRead *.html nnoremap ;h2 a<h2></h2><Enter><Enter><++><Esc>2k02wa
+au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Enter><Enter><++><Esc>2k02wa
+
+
+
+
+"au BufNewFile,BufRead *.html nnoremap ;d a<div id="" class="<++>"><Enter><++><Enter></div><Enter><Enter><++><Esc>4k03w2li
+"au BufNewFile,BufRead *.html nnoremap ;h1 a<h1></h1><Enter><Enter><++><Esc>2kf<i
+"au BufNewFile,BufRead *.html nnoremap ;h2 a<h2></h2><Enter><Enter><++><Esc>2kf<i
+"au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Enter><Enter><++><Esc>2kf<i
+"au BufNewFile,BufRead *.html nnoremap ;im a<img id="" class="<++>" src="<++"
+
 "au BufNewFile,BufRead *.html nnoremap ;b a<b></b><Space><++><Esc>FbT>i
 "au BufNewFile,BufRead *.html nnoremap ;it a<em></em><Space><++><Esc>FeT>i
 "au BufNewFile,BufRead *.html nnoremap ;1 a<h1></h1><Enter><Enter><++><Esc>2kf<i
