@@ -82,7 +82,7 @@ au BufNewFile,BufRead *.html nnoremap ;br a<br><Enter>
 au BufNewFile,BufRead *.html nnoremap ;hr a<hr><Enter>
 au BufNewFile,BufRead *.html nnoremap ;bu a<button><++></button><Enter><Enter><++><Esc>2kea<Space>
 au BufNewFile,BufRead *.html nnoremap ;a a<a href=""><++></a><Enter><Enter><++><Esc>2kwla
-au BufNewFile,BufRead *.html nnoremap ;im a<img src="" <++>><Enter><Enter><++><Esc>2k2wla
+au BufNewFile,BufRead *.html nnoremap ;im a<img src="img/" <++>><Enter><Enter><++><Esc>2k4wa
 au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Backspace></ul><Enter><Enter><++><Esc>2k2bi
 au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Backspace></ol><Enter><Enter><++><Esc>2k2bi
 au BufNewFile,BufRead *.html nnoremap ;li a<li></li><++><Esc>3ba
@@ -111,4 +111,5 @@ au BufNewFile,BufRead *.vim nnoremap ;e a<\Esc><Esc>bhxwa
 au BufNewFile,BufRead *.vim nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
 
-"bash script macros
+"shell script macros
+
