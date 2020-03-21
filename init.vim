@@ -80,14 +80,12 @@ au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Enter><Enter><++><Esc>2k02w
 au BufNewFile,BufRead *.html nnoremap ;d a<div><++></div><Enter><Enter><++><Esc>2ka<Space>
 au BufNewFile,BufRead *.html nnoremap ;br a<br><Enter>
 au BufNewFile,BufRead *.html nnoremap ;hr a<hr><Enter>
-
-"ul
-"ol
-"img
-"anchor
-"button
-"hr
-"br
+au BufNewFile,BufRead *.html nnoremap ;bu a<button><++></button><Enter><Enter><++><Esc>2kea<Space>
+au BufNewFile,BufRead *.html nnoremap ;a a<a href=""><++></a><Enter><Enter><++><Esc>2kwla
+au BufNewFile,BufRead *.html nnoremap ;im a<img src="" <++>><Enter><Enter><++><Esc>2k2wla
+au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Backspace></ul><Enter><Enter><++><Esc>2k2bi
+au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Backspace></ol><Enter><Enter><++><Esc>2k2bi
+au BufNewFile,BufRead *.html nnoremap ;li a<li></li><++><Esc>3ba
 
 
 "c macros
