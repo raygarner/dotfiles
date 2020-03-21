@@ -82,6 +82,10 @@ au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Enter><Enter><++><Esc>2k02w
 "ol
 "img
 "anchor
+"button
+"hr
+"br
+
 
 
 "c macros
@@ -99,6 +103,9 @@ au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space
 
 "vimscript macros
 "keypress keyword shortcuts
-
+au BufNewFile,BufRead *.vim nnoremap ;<Space> a<\Space><Esc>bhxwa
+au BufNewFile,BufRead *.vim nnoremap ;<Tab> a<\Tab><Esc>bhxwa
+au BufNewFile,BufRead *.vim nnoremap ;<Backspace> a<\Backspace><Esc>bhxwa
+au BufNewFile,BufRead *.vim nnoremap ;e a<\Esc><Esc>bhxwa
 
 "bash script macros
