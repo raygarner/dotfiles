@@ -107,5 +107,6 @@ au BufNewFile,BufRead *.vim nnoremap ;<Space> a<\Space><Esc>bhxwa
 au BufNewFile,BufRead *.vim nnoremap ;<Tab> a<\Tab><Esc>bhxwa
 au BufNewFile,BufRead *.vim nnoremap ;<Backspace> a<\Backspace><Esc>bhxwa
 au BufNewFile,BufRead *.vim nnoremap ;e a<\Esc><Esc>bhxwa
+au BufNewFile,BufRead *.vim nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
 "bash script macros
