@@ -70,6 +70,7 @@ au BufNewFile,BufRead *.tex nnoremap ;s4 a\subsubsubsection{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;p1 a\paragraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;p2 a\subparagraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;pi a\begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=0.8\textwidth]{img/}<Enter>\caption{<++>}<Enter>\end{figure}<Enter><Enter><++><Esc>4k$i
+au BufNewFile,BufRead *.tex nnoremap ;vb a\verb!!<++><Esc>ba
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><head><Enter><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
