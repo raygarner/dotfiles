@@ -39,8 +39,8 @@ map <C-l> <C-w>l
 "delete trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
-set background=dark
-colorscheme gruvbox-material
+"set background=dark
+"colorscheme gruvbox-material
 
 set splitbelow splitright "split puts window on right
 
