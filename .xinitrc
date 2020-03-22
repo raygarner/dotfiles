@@ -14,8 +14,7 @@ done &
 mons -s
 xrandr --output HDMI1 --primary --mode 2560x1440
 
-feh --bg-max --randomize /home/ray/pics/papes/* &
-
+xwallpaper --zoom "/home/ray/pics/papes/$(ls /home/ray/pics/papes/ | shuf -n 1)"
 
 
 exec dwm
