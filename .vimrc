@@ -10,6 +10,10 @@ set expandtab
 set mouse=a
 set clipboard=unnamedplus
 
+let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
+let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
+let &t_EI = "\<esc>[ q"  " default cursor (usually blinking block) otherwise
+
 "copy and pasting
 vnoremap <C-c> "+y
 map <C-p> "+p
