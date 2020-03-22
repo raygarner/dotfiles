@@ -4,7 +4,7 @@ setxkbmap -option caps:escape
 
 loadkeys uk
 
-feh --bg-scale /home/ray/pics/papes/lillypond.jpg
+feh --bg-scale --randomize /home/ray/pics/papes/* &
 
 compton --no-fading-openclose &
 
