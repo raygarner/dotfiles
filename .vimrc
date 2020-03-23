@@ -10,9 +10,12 @@ set expandtab
 set mouse=a
 set clipboard=unnamedplus
 
-let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
-let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
-let &t_EI = "\<esc>[ q"  " default cursor (usually blinking block) otherwise
+let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
+let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
+let &t_EI = "\<Esc>[ q"  " default cursor (usually blinking block) otherwise
+
+"remove delay when pressing escape
+set timeoutlen=1000 ttimeoutlen=0
 
 "copy and pasting
 vnoremap <C-c> "+y
@@ -65,7 +68,7 @@ nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
-au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>16k$i
+au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>15k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
