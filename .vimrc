@@ -69,7 +69,7 @@ nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
-au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>15k$i
+au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>16k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
@@ -82,20 +82,21 @@ au BufNewFile,BufRead *.tex nnoremap ;vb a\verb!!<++><Esc>ba
 au BufNewFile,BufRead *.tex nnoremap ;sr a\lstinputlisting{src/}<Esc>i
 
 "html macros
-au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><head><Enter><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
-au BufNewFile,BufRead *.html nnoremap ;p a<p></p><Enter><Enter><++><Esc>2ki
-au BufNewFile,BufRead *.html nnoremap ;h1 a<h1></h1><Enter><Enter><++><Esc>2k02wa
-au BufNewFile,BufRead *.html nnoremap ;h2 a<h2></h2><Enter><Enter><++><Esc>2k02wa
-au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Enter><Enter><++><Esc>2k02wa
-au BufNewFile,BufRead *.html nnoremap ;d a<div><++></div><Enter><Enter><++><Esc>2ka<Space>
+au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
+au BufNewFile,BufRead *.html nnoremap ;p a<p></p><Esc>2ba
+au BufNewFile,BufRead *.html nnoremap ;h1 a<h1></h1><Esc>2ba
+au BufNewFile,BufRead *.html nnoremap ;h2 a<h2></h2><Esc>2ba
+au BufNewFile,BufRead *.html nnoremap ;h3 a<h3></h3><Esc>2ba
+au BufNewFile,BufRead *.html nnoremap ;d a<div><Enter><Tab><++><Enter><Backspace></div><Enter><Enter><++><Esc>4ka<Space>
 au BufNewFile,BufRead *.html nnoremap ;br a<br><Enter>
 au BufNewFile,BufRead *.html nnoremap ;hr a<hr><Enter>
 au BufNewFile,BufRead *.html nnoremap ;bu a<button><++></button><Enter><Enter><++><Esc>2kea<Space>
 au BufNewFile,BufRead *.html nnoremap ;a a<a href=""><++></a><Enter><Enter><++><Esc>2kwla
 au BufNewFile,BufRead *.html nnoremap ;im a<img src="img/" <++>><Enter><Enter><++><Esc>2k4wa
-au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Backspace></ul><Enter><Enter><++><Esc>2k2bi
-au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Backspace></ol><Enter><Enter><++><Esc>2k2bi
-au BufNewFile,BufRead *.html nnoremap ;li a<li></li><++><Esc>3ba
+au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Enter></ul><Enter><Enter><++><Esc>4ko<Tab>
+au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Enter></ol><Enter><Enter><++><Esc>4ko<Tab>
+
+au BufNewFile,BufRead *.html nnoremap ;li a<li></li><Enter><++><Esc>ka
 
 
 "c macros
