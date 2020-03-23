@@ -9,6 +9,7 @@ set shiftwidth=4
 set expandtab
 set mouse=a
 set clipboard=unnamedplus
+set autoindent
 
 let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
 let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
@@ -98,7 +99,7 @@ au BufNewFile,BufRead *.html nnoremap ;li a<li></li><++><Esc>3ba
 
 
 "c macros
-au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space>main(int<Space>argc,<Space>char<Space>**argv)<Enter>{<Enter><Enter>return<Space>0;<Enter><Backspace>}<Esc>2ki<Tab>
+au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space>main(int<Space>argc,<Space>char<Space>**argv)<Enter>{<Enter><Enter><Tab>return<Space>0;<Enter><Backspace>}<Esc>2ki<Tab>
 "for
 "while
 "do while
