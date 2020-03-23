@@ -7,5 +7,6 @@ alias todo='vim /home/ray/Documents/todo'
 alias docs='cd /home/ray/Documents'
 alias papes='cd /home/ray/pics/papes'
 alias pm=pulsemixer
+alias icaclient=/opt/Citrix/ICAClient/selfservice
 
 export PATH=$PATH:/home/ray/scripts
