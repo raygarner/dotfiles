@@ -95,7 +95,6 @@ au BufNewFile,BufRead *.html nnoremap ;a a<a href=""><++></a><Enter><Enter><++><
 au BufNewFile,BufRead *.html nnoremap ;im a<img src="img/" <++>><Enter><Enter><++><Esc>2k4wa
 au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Enter></ul><Enter><Enter><++><Esc>4ko<Tab>
 au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Enter></ol><Enter><Enter><++><Esc>4ko<Tab>
-
 au BufNewFile,BufRead *.html nnoremap ;li a<li></li><Enter><++><Esc>ka
 
 
