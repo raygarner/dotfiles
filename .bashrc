@@ -7,3 +7,5 @@ alias todo='vim /home/ray/Documents/todo'
 alias docs='cd /home/ray/Documents'
 alias papes='cd /home/ray/pics/papes'
 alias pm=pulsemixer
+
+export PATH=$PATH:/home/ray/scripts
