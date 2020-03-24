@@ -10,6 +10,7 @@ alias papes='cd /home/ray/pics/papes'
 alias dls='cd /home/ray/Downloads'
 alias vids='cd /home/ray/vids'
 alias pics='cd /home/ray/pics'
+alias scripts='cd /home/ray/scripts'
 alias pm=pulsemixer
 alias icaclient=/opt/Citrix/ICAClient/selfservice
 
