@@ -11,5 +11,7 @@ alias vids='cd /home/ray/vids'
 alias pics='cd /home/ray/pics'
 alias scripts='cd /home/ray/scripts'
 alias pm=pulsemixer
+alias finger='pinky -l'
 
 export PATH=$PATH:/home/ray/scripts
+export EDITOR=vim
