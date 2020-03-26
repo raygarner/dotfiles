@@ -15,6 +15,10 @@ alias finger='pinky -l'
 alias plan='vim /home/ray/.plan'
 alias project='vim /home/ray/.project'
 alias todo='calcurse'
+alias xrc='vim /home/ray/dotfiles/.xinitrc'
+alias bashrc='vim /home/ray/dotfiles/.bashrc'
+alias vimrc='vim /home/ray/dotfiles/.vimrc'
+
 
 export PATH=$PATH:/home/ray/scripts
 export EDITOR=vim
