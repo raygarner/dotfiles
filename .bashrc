@@ -18,6 +18,7 @@ alias todo='calcurse'
 alias xrc='vim /home/ray/dotfiles/.xinitrc'
 alias bashrc='vim /home/ray/dotfiles/.bashrc'
 alias vimrc='vim /home/ray/dotfiles/.vimrc'
+alias fse='cd /home/ray/comp1003-1920-template-repo'
 
 
 export PATH=$PATH:/home/ray/scripts
