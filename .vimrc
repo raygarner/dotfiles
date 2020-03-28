@@ -1,5 +1,3 @@
-set nocompatible
-filetype plugin on
 filetype on
 set number
 syntax on
@@ -132,4 +130,10 @@ au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
 
 "shell script macros
 
+"cursor fix
+function CursorFix()
+    normal i
 
+endfunction
+
+call CursorFix()
