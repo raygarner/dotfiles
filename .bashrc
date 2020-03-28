@@ -20,6 +20,7 @@ alias brc='vim /home/ray/dotfiles/.bashrc'
 alias vrc='vim /home/ray/dotfiles/.vimrc'
 alias fse='cd /home/ray/comp1003-1920-template-repo'
 alias xbk='vim /home/ray/dotfiles/.xbindkeysrc'
+alias irc='vim /home/ray/dotfiles/.inputrc'
 
 
 export PATH=$PATH:/home/ray/scripts
