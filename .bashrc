@@ -21,7 +21,11 @@ alias vrc='vim /home/ray/dotfiles/.vimrc'
 alias fse='cd /home/ray/comp1003-1920-template-repo'
 alias xbk='vim /home/ray/dotfiles/.xbindkeysrc'
 alias irc='vim /home/ray/dotfiles/.inputrc'
+shopt -s autocd
 
+#bind '"^M":"^[\n"'
+#bind '"\n":"^[\n"'
+#bind '"\e^M":"^[^M"'
 
 export PATH=$PATH:/home/ray/scripts
 export EDITOR=vim

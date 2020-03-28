@@ -10,9 +10,9 @@ set expandtab
 set clipboard=unnamedplus
 set autoindent
 
-let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
-let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
 let &t_EI = "\<Esc>[ q"  " default cursor (usually blinking block) otherwise
+let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
+let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
 
 "remove delay when pressing escape
 set timeoutlen=1000 ttimeoutlen=0
