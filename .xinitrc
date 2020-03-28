@@ -13,7 +13,7 @@ do
 	sleep 1
 done &
 
-echo "* " > .plan
+echo "" > .plan
 
 mons -s
 xrandr --output HDMI1 --primary --mode 2560x1440
