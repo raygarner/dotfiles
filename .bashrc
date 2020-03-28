@@ -19,5 +19,9 @@ shopt -s autocd
 #bind '"\n":"^[\n"'
 #bind '"\e^M":"^[^M"'
 
+function cd {
+    builtin cd "$@" && ls
+}
+
 export PATH=$PATH:/home/ray/scripts
 export EDITOR=vim
