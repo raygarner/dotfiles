@@ -1,4 +1,4 @@
-set -o vi
+#set -o vi
 
 alias v=vim
 alias ls='ls --color=auto'
