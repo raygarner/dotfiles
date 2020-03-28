@@ -3,4 +3,3 @@ set vi-cmd-mode-string \1\e[ q\2
 set show-mode-in-prompt
 set editing-mode vi
 set keymap vi-command
-"\e": "\e\e"
