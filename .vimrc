@@ -124,6 +124,8 @@ au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnorem
 "au BufNewFile,BufRead .plan nnoremap ;t a<Enter>+<Space>
 "au BufNewFile,BufRead .plan nnoremap ;d a<Enter>*<Space>
 au BufNewFile,BufRead .plan inoremap <Enter> <Enter>*<Space>
+au BufNewFile,BufRead .plan nnoremap o o*<Space>
+au BufNewFile,BufRead .plan nnoremap O O*<Space>
 
 "shell script macros
 
