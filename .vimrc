@@ -66,6 +66,9 @@ nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 
 nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 
+nnoremap ;sc a#!/bin/sh<Enter><Esc>:w<Enter>:e<Enter>i
+nnoremap ;r :w<Enter>:e<Enter>
+
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
 au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>16k$i
