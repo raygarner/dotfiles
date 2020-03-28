@@ -113,13 +113,18 @@ au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space
 
 "vimscript macros
 "keypress keyword shortcuts
-au BufNewFile,BufRead *.vim nnoremap ;<Space> a<\Space><Esc>bhxwa
-au BufNewFile,BufRead *.vim nnoremap ;<Tab> a<\Tab><Esc>bhxwa
-au BufNewFile,BufRead *.vim nnoremap ;<Backspace> a<\Backspace><Esc>bhxwa
-au BufNewFile,BufRead *.vim nnoremap ;<Enter> a<\Enter><Esc>bhxwa
-au BufNewFile,BufRead *.vim nnoremap ;e a<\Esc><Esc>bhxwa
-au BufNewFile,BufRead *.vim nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;<Space> a<\Space><Esc>bhxwa
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;<Tab> a<\Tab><Esc>bhxwa
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;<Backspace> a<\Backspace><Esc>bhxwa
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;<Enter> a<\Enter><Esc>bhxwa
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;e a<\Esc><Esc>bhxwa
+au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
+"plan file macros
+"au BufNewFile,BufRead .plan nnoremap ;t a<Enter>+<Space>
+"au BufNewFile,BufRead .plan nnoremap ;d a<Enter>*<Space>
+au BufNewFile,BufRead .plan inoremap <Enter> <Enter>*<Space>
 
 "shell script macros
+
 
