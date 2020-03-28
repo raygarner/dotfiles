@@ -130,7 +130,7 @@ au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
 
 "shell script macros
 
-"cursor fix
+"cursor fix to stop vi mode in bash cursor messing this up
 function CursorFix()
     normal i
 
