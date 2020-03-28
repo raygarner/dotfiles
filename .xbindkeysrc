@@ -4,7 +4,7 @@
 "cd pics/screenshots && scrot -p"
 	Print
 
-"st"
+"tabbed -r 2 st -w ''"
 	Mod1 + Shift + Return
 
 "xkill"
