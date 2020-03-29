@@ -16,7 +16,7 @@ done &
 mons -s
 xrandr --output HDMI1 --primary --mode 2560x1440
 
-xwallpaper --zoom "/home/ray/pics/papes/$(ls /home/ray/pics/papes/ | shuf -n 1)"
+xwallpaper --zoom "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ | shuf -n 1)"
 
 
 exec dwm
