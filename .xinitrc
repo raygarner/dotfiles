@@ -8,7 +8,7 @@ numlockx &
 
 compton --no-fading-openclose &
 
-while xsetroot -name " BAT: `cat /sys/class/power_supply/BAT0/capacity`% | CPU: `top -b -n 1 | grep Cpu | awk '{print 100-$8}'`% | Free RAM: `free -h G --si | grep Mem | awk '{print $7}'` | Disk Space: `df -H --total | grep total | awk '{print $4}'` | `date +%H:%M:%S` `date +%d/%m/%y` | `whoami`@`cat /etc/hostname` "
+while xsetroot -name " BAT: `cat /sys/class/power_supply/BAT0/capacity`% | CPU: `top -b -n 1 | grep Cpu | awk '{print 100-$8}'`% | MF: `free -h G --si | grep Mem | awk '{print $7}'` | DF: `df -H --total | grep total | awk '{print $4}'` | `date +%H:%M:%S` `date +%d/%m/%y` | `whoami`@`cat /etc/hostname` "
 do
 	sleep 1
 done &
