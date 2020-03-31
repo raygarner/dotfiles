@@ -5,7 +5,7 @@ autoload -U colors && colors
 #PS1="%B%n@%M %d $%b "
 #PS1="%B%{$fg[blue]%}%n%{$reset_color%}@%{$fg[blue]%}%M %{$fg[white]%}%d %{$reset_color%}$%b "
 
-PS1="%B%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%M %{$fg[white]%}%d %{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%M %{$fg[white]%}%c %{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
