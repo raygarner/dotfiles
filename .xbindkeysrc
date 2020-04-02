@@ -16,8 +16,5 @@
 "redshift -x"
 	Mod1 + x
 
-"thunderbird"
-	Mod1 + e
-
 "slock"
 	Mod1 + z

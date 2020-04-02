@@ -25,6 +25,9 @@ export PATH=$PATH:/home/ray/scripts
 #set editor
 export EDITOR=vim
 
+#set browser
+export BROWSER=brave
+
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
