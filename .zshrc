@@ -19,8 +19,6 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-#add my scripts to path
-export PATH=$PATH:/home/ray/scripts
 
 #set editor
 export EDITOR=vim
