@@ -129,6 +129,10 @@ au BufNewFile,BufRead .plan nnoremap O O*<Space>
 au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
 
 "shell script macros
+au BufNewFile,BufRead *.sh nnoremap ;if aif [ ]; then<Enter><Tab><++><Enter><Enter><Backspace>fi<Enter><Enter><++><Esc>5k$2bi
+au BufNewFile,BufRead *.sh nnoremap ;el aelif [ ]; then<Enter><Tab><++><Esc>k$2bi
+au BufNewFile,BufRead *.sh nnoremap ;wl awhile [ ]; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k$2bi
+au BufNewFile,BufRead *.sh nnoremap ;fl afor in <++>; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k0ea<Space>
 
-"cursor fix to stop vi mode in bash cursor messing this up (refresh normal mode basically)
+"cursor fix to stop vi mode in shell messing vim cursor up
 normal i
