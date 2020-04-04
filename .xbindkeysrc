@@ -4,7 +4,7 @@
 "cd /home/ray/media/pics/screenshots && scrot -p"
 	Print
 
-"tabbed -r 2 st -w ''"
+"st"
 	Mod1 + Shift + Return
 
 "xkill"
