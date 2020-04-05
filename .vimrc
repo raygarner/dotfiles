@@ -133,7 +133,8 @@ au BufNewFile,BufRead *.sh nnoremap ;if aif [ ]; then<Enter><Tab><++><Enter><Ent
 au BufNewFile,BufRead *.sh nnoremap ;el aelif [ ]; then<Enter><Tab><++><Esc>k$2bi
 au BufNewFile,BufRead *.sh nnoremap ;wl awhile [ ]; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k$2bi
 au BufNewFile,BufRead *.sh nnoremap ;fl afor in <++>; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k0ea<Space>
-"add switch statement macro
+au BufNewFile,BufRead *.sh nnoremap ;sw acase  in<Enter><Tab><++><Enter><Enter><Enter>*)<Enter><Backspace>esac<Esc>5kla
+au BufNewFile,BufRead *.sh nnoremap ;ca a)<Enter><Tab><++><Enter><Enter>;;<Enter><Backspace><++><Esc>4ki
 
 "cursor fix to stop vi mode in shell messing vim cursor up
 normal i
