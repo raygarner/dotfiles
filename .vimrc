@@ -97,13 +97,14 @@ au BufNewFile,BufRead *.html nnoremap ;ul a<ul><Enter><Enter></ul><Enter><Enter>
 au BufNewFile,BufRead *.html nnoremap ;ol a<ol><Enter><Enter></ol><Enter><Enter><++><Esc>4ko<Tab>
 au BufNewFile,BufRead *.html nnoremap ;li a<li></li><Enter><++><Esc>ka
 
-
 "c macros
 au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space>main(int<Space>argc,<Space>char<Space>**argv)<Enter>{<Enter><Enter><Tab>return<Space>0;<Enter><Backspace>}<Esc>2ki<Tab>
-"for
-"while
-"do while
-"if
+au BufNewFile,BufRead *.c nnoremap ;f afor (; <++>; <++>) {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+au BufNewFile,BufRead *.c nnoremap ;w awhile () {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+au BufNewFile,BufRead *.c nnoremap ;dw ado {<Enter><Tab><--><Enter><Enter><Backspace>} while ();<Enter><Enter><++><Esc>2kwa
+au BufNewFile,BufRead *.c nnoremap ;if aif () {<Enter><Tab><++><Enter><Enter><Backspace>} <++><Enter><Enter><++><Esc>5ka
+au BufNewFile,BufRead *.c nnoremap ;el aelse {<Enter><Tab><Enter><Backspace>} <++><Enter><Enter><++><Esc>3ki
+au BufNewFile,BufRead *.c nnoremap ;ei aelse if () {<Enter><Tab><++><Enter><Enter><Backspace>} <++><Enter><Enter><++><Esc>5k2wa
 "switch
 "include file
 "include library
@@ -121,8 +122,6 @@ au BufNewFile,BufRead *.vim,.vimrc nnoremap ;e a<\Esc><Esc>bhxwa
 au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
 "plan file macros
-"au BufNewFile,BufRead .plan nnoremap ;t a<Enter>+<Space>
-"au BufNewFile,BufRead .plan nnoremap ;d a<Enter>*<Space>
 au BufNewFile,BufRead .plan inoremap <Enter> <Enter>*<Space>
 au BufNewFile,BufRead .plan nnoremap o o*<Space>
 au BufNewFile,BufRead .plan nnoremap O O*<Space>
