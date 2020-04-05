@@ -99,17 +99,19 @@ au BufNewFile,BufRead *.html nnoremap ;li a<li></li><Enter><++><Esc>ka
 
 "c macros
 au BufNewFile,BufRead *.c nnoremap ;n a#include <stdio.h><Enter><Enter>int<Space>main(int<Space>argc,<Space>char<Space>**argv)<Enter>{<Enter><Enter><Tab>return<Space>0;<Enter><Backspace>}<Esc>2ki<Tab>
-au BufNewFile,BufRead *.c nnoremap ;f afor (; <++>; <++>) {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
-au BufNewFile,BufRead *.c nnoremap ;w awhile () {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+au BufNewFile,BufRead *.c nnoremap ;fl afor (; <++>; <++>) {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+au BufNewFile,BufRead *.c nnoremap ;wl awhile () {<Enter><Tab><++><Enter><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
 au BufNewFile,BufRead *.c nnoremap ;dw ado {<Enter><Tab><--><Enter><Enter><Backspace>} while ();<Enter><Enter><++><Esc>2kwa
 au BufNewFile,BufRead *.c nnoremap ;if aif () {<Enter><Tab><++><Enter><Enter><Backspace>} <++><Enter><Enter><++><Esc>5ka
 au BufNewFile,BufRead *.c nnoremap ;el aelse {<Enter><Tab><Enter><Backspace>} <++><Enter><Enter><++><Esc>3ki
 au BufNewFile,BufRead *.c nnoremap ;ei aelse if () {<Enter><Tab><++><Enter><Enter><Backspace>} <++><Enter><Enter><++><Esc>5k2wa
-"switch
-"include file
-"include library
-"struct
-"shorthand if
+au BufNewFile,BufRead *.c nnoremap ;sw aswitch() {<Enter>case <++> :<Enter><Tab><++><Enter><Enter><Backspace>case <++> :<Enter><Tab><++><Enter><Enter><Backspace>default :<Enter><Tab><++><Enter><Backspace>}<Enter><Enter><++><Esc>11kwa
+au BufNewFile,BufRead *.c nnoremap ;fu a{<Enter><Tab><--><Enter><Enter>return ;<Enter><Backspace>}<Esc>k2wi
+au BufNewFile,BufRead *.c nnoremap ;in a#include ".h"<Enter><++><Esc>kwa
+au BufNewFile,BufRead *.c nnoremap ;il a#include <.h><Enter><++><Esc>kwa
+au BufNewFile,BufRead *.c nnoremap ;st atypedef struct  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
+au BufNewFile,BufRead *.c nnoremap ;en atypedef enum  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
+au BufNewFile,BufRead *.c nnoremap ;un atypedef union  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
 
 
 "vimscript macros
