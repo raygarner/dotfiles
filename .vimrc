@@ -15,9 +15,10 @@ let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
 "remove delay when pressing escape
 set timeoutlen=1000 ttimeoutlen=0
 
-"copy and pasting
+"copy and pasting from global clipboard
 vnoremap <C-c> "+y
 map <C-p> "+p
+"paste from surf
 map <C-w> "*p
 
 "remember position in file
