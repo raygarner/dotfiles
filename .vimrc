@@ -19,7 +19,7 @@ set timeoutlen=1000 ttimeoutlen=0
 vnoremap <C-c> "+y
 map <C-p> "+p
 "paste from surf
-map <C-w> "*p
+map <C-a> "*p
 
 "remember position in file
 if has("autocmd")
