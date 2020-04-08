@@ -18,6 +18,7 @@ set timeoutlen=1000 ttimeoutlen=0
 "copy and pasting
 vnoremap <C-c> "+y
 map <C-p> "+p
+map <C-w> "*p
 
 "remember position in file
 if has("autocmd")
