@@ -70,8 +70,8 @@ nnoremap ;sc a#!/bin/sh<Enter><Esc>:w<Enter>:e<Enter>i
 nnoremap ;r :w<Enter>:e<Enter>
 
 "tex macros
-au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
-au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>:w<Enter>:e<Enter>16k$i
+au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}[<++>]<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$i
+au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage[margin=3cm]{geometry}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\small\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>:w<Enter>:e<Enter>17k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
@@ -82,6 +82,8 @@ au BufNewFile,BufRead *.tex nnoremap ;p2 a\subparagraph{}<Esc>
 au BufNewFile,BufRead *.tex nnoremap ;pi a\begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=0.8\textwidth]{img/}<Enter>\caption{<++>}<Enter>\end{figure}<Enter><Enter><++><Esc>4k$i
 au BufNewFile,BufRead *.tex nnoremap ;vb a\verb!!<++><Esc>ba
 au BufNewFile,BufRead *.tex nnoremap ;sr a\lstinputlisting{src/}<Esc>i
+au BufNewFile,BufRead *.tex nnoremap ;rn a\renewcommand{}{<Enter><++><Enter>}<Enter><Enter><++><Esc>4k$hi
+au BufNewFile,BufRead *.tex nnoremap ;tf a\titleformat{}<Enter>{}<Enter>{}<Enter>{0em}<Enter>{}[]<Enter><Enter><++><Esc>6k$i
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
