@@ -8,7 +8,7 @@ set expandtab
 set clipboard=unnamedplus
 set autoindent
 
-au FileType make set noexpandtab
+autocmd FileType make setlocal noexpandtab
 
 let &t_EI = "\<Esc>[ q"  " default cursor (usually blinking block) otherwise
 let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
@@ -140,9 +140,9 @@ au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
 "shell script macros
 au BufNewFile,BufRead *.sh nnoremap ;if aif [ ]; then<Enter><Tab><++><Enter><Enter><Backspace>fi<Enter><Enter><++><Esc>5k$2bi
 au BufNewFile,BufRead *.sh nnoremap ;el aelif [ ]; then<Enter><Tab><++><Esc>k$2bi
-au BufNewFile,BufRead *.sh nnoremap ;wl awhile [ ]; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k$2bi
+au BufNewFile,BufRead *.sh nnoremap ;wl awhile [ ]; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>3kwa<Space>
 au BufNewFile,BufRead *.sh nnoremap ;fl afor in <++>; do<Enter><Tab><++><Enter><Enter><Backspace>done<Esc>4k0ea<Space>
-au BufNewFile,BufRead *.sh nnoremap ;sw acase  in<Enter><Tab><++><Enter><Enter><Enter>*)<Enter><Backspace>esac<Esc>5kla
+au BufNewFile,BufRead *.sh nnoremap ;sw acase  in<Enter><Tab><++>)<Enter><Tab><++><Enter>;;<Enter><Backspace><++>)<Enter><Tab><++><Enter>;;<Enter><Backspace><Enter>*)<Enter><Backspace>esac<Esc>9kla
 au BufNewFile,BufRead *.sh nnoremap ;ca a)<Enter><Tab><++><Enter><Enter>;;<Enter><Backspace><++><Esc>4ki
 
 "cursor fix to stop vi mode in shell messing vim cursor up
