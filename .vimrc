@@ -8,6 +8,8 @@ set expandtab
 set clipboard=unnamedplus
 set autoindent
 
+au FileType make set noexpandtab
+
 let &t_EI = "\<Esc>[ q"  " default cursor (usually blinking block) otherwise
 let &t_SR = "\<Esc>[3 q"  " blinking underline in replace mode
 let &t_SI = "\<Esc>[5 q"  " blinking I-beam in insert mode
@@ -116,7 +118,7 @@ au BufNewFile,BufRead *.c nnoremap ;il a#include <.h><Enter><++><Esc>kwa
 au BufNewFile,BufRead *.c nnoremap ;st atypedef struct  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
 au BufNewFile,BufRead *.c nnoremap ;en atypedef enum  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
 au BufNewFile,BufRead *.c nnoremap ;un atypedef union  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
-au BufNewFile,BufRead *.c nnoremap ;cm 0i/* <Esc>$a */
+au BufNewFile,BufRead *.c nnoremap ;cm 0i/* <Esc>$a */<Esc>
 au BufNewFile,BufRead *.c nnoremap ;uc 03x$2h3x
 
 
