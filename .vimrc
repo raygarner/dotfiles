@@ -35,7 +35,7 @@ au FileType groff set spell
 au BufNewFile,BufRead *.tex set spell
 au BufNewFile,BufRead *.md set spell
 
-"underline spelling errors
+"underline spelling errors instead of highlight
 hi clear SpellBad
 hi SpellBad cterm=underline
 hi SpellBad ctermfg=red
@@ -43,6 +43,14 @@ hi SpellBad ctermfg=red
 hi clear SpellCap
 hi SpellCap cterm=underline
 hi SpellCap ctermfg=blue
+
+hi clear SpellRare
+hi SpellRare cterm=underline
+hi SpellRare ctermfg=green
+
+hi clear SpellLocal
+hi SpellLocal cterm=underline
+hi SpellLocal ctermfg=yellow
 
 
 "split navigation shortcuts
