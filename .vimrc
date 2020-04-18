@@ -7,7 +7,7 @@ set shiftwidth=4
 set expandtab
 set clipboard=unnamedplus
 set autoindent
-set spell spelllang=en_gb
+set spelllang=en_gb
 
 autocmd FileType make setlocal noexpandtab
 
