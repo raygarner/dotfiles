@@ -100,7 +100,7 @@ au BufNewFile,BufRead *.tex nnoremap ;vb a\verb!!<++><Esc>ba
 au BufNewFile,BufRead *.tex nnoremap ;sr a\lstinputlisting{src/}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;rn a\renewcommand{}{<Enter><++><Enter>}<Enter><Enter><++><Esc>4k$hi
 au BufNewFile,BufRead *.tex nnoremap ;tf a\titleformat{}<Enter>{}<Enter>{}<Enter>{0em}<Enter>{}[]<Enter><Enter><++><Esc>6k$i
-au BufNewFile,BufRead *.tex nnoremap ;ld a\textbf{}<++><Esc>ba
+au BufNewFile,BufRead *.tex nnoremap ;ld a\textbf{} <++><Esc>2ba
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
