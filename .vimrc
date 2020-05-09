@@ -87,7 +87,7 @@ nnoremap ;r :w<Enter>:e<Enter>
 
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$ba
-au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage[margin=2cm]{geometry}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\normalsize\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\tolerance=1<Enter>\emergencystretch=\maxdimen<Enter>\hyphenpenalty=10000<Enter>\hbadness=10000<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>:w<Enter>:e<Enter>22k$i
+au BufNewFile,BufRead *.tex nnoremap ;n a\documentclass{}<Enter><Enter>\usepackage[backend=biber]{biblatex}<Enter>\addbibresource{/home/ray/docs/bib/uni.bib}<Enter><Enter>\usepackage{graphicx}<Enter>\usepackage[english]{babel}<Enter>\usepackage{blindtext}<Enter>\usepackage[margin=2cm]{geometry}<Enter>\usepackage{listings}<Enter>\lstset{<Enter><Tab>basicstyle=\normalsize\ttfamily,<Enter>columns=flexible,<Enter>breaklines=true<Enter><Backspace>}<Enter><Enter>\tolerance=1<Enter>\emergencystretch=\maxdimen<Enter>\hyphenpenalty=10000<Enter>\hbadness=10000<Enter><Enter>\title{<++>}<Esc>:pu=strftime('%d/%m/%y')<Enter>i\date{<Esc>$a}<Enter>\author{Ray Garner}<Enter><Enter><++><Esc>:w<Enter>:e<Enter>25k$i
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s1 a\section{}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;s2 a\subsection{}<Esc>i
@@ -102,6 +102,7 @@ au BufNewFile,BufRead *.tex nnoremap ;sr a\lstinputlisting{src/}<Esc>i
 au BufNewFile,BufRead *.tex nnoremap ;rn a\renewcommand{}{<Enter><++><Enter>}<Enter><Enter><++><Esc>4k$hi
 au BufNewFile,BufRead *.tex nnoremap ;tf a\titleformat{}<Enter>{}<Enter>{}<Enter>{0em}<Enter>{}[]<Enter><Enter><++><Esc>6k$i
 au BufNewFile,BufRead *.tex nnoremap ;ld a\textbf{} <++><Esc>2ba
+au BufNewFile,BufRead *.bib nnoremap ;a a@{<++>,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter><++><Enter><Backspace>}<Esc>5ka
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
