@@ -103,6 +103,7 @@ au BufNewFile,BufRead *.tex nnoremap ;rn a\renewcommand{}{<Enter><++><Enter>}<En
 au BufNewFile,BufRead *.tex nnoremap ;tf a\titleformat{}<Enter>{}<Enter>{}<Enter>{0em}<Enter>{}[]<Enter><Enter><++><Esc>6k$i
 au BufNewFile,BufRead *.tex nnoremap ;ld a\textbf{} <++><Esc>2ba
 au BufNewFile,BufRead *.bib nnoremap ;a a@{<++>,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter><++><Enter><Backspace>}<Esc>5ka
+au BufNewFile,BufRead *.tex nnoremap ;tc a\textcite{} <++><Esc>2ba
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
