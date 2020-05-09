@@ -109,8 +109,8 @@ au BufNewFile,BufRead *.tex nnoremap ;i a\emph{} <++><Esc>2ba
 "bib macros
 au BufNewFile,BufRead *.bib nnoremap ;b a@book{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>publisher = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 au BufNewFile,BufRead *.bib nnoremap ;a a@article{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>journal = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
-au BufNewFile,BufRead *.bib nnoremap ;a a@phdthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
-au BufNewFile,BufRead *.bib nnoremap ;a a@mastersthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
+au BufNewFile,BufRead *.bib nnoremap ;p a@phdthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
+au BufNewFile,BufRead *.bib nnoremap ;m a@mastersthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
