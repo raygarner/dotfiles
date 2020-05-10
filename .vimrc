@@ -106,6 +106,11 @@ au BufNewFile,BufRead *.tex nnoremap ;ld a\textbf{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;tc a\textcite{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;c a\cite{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;i a\emph{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;ag a\newglossaryentry{}{name=<++>, description={<++>}}<Esc>5ba
+au BufNewFile,BufRead *.tex nnoremap ;gl a\gls{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;na a\newacronym{}{<++>}{<++>}<Esc>ba
+au BufNewFile,BufRead *.tex nnoremap ;al a\acrlong{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;as a\acrshort{} <++><Esc>2ba
 
 "bib macros
 au BufNewFile,BufRead *.bib nnoremap ;b a@book{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>publisher = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
