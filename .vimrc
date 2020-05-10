@@ -34,6 +34,7 @@ au BufNewFile,BufRead *.ms,*.me,*.mom,*.man set filetype=groff
 au FileType groff set spell
 au BufNewFile,BufRead *.tex set spell
 au BufNewFile,BufRead *.md set spell
+au BufNewFile,BufRead *.bib set spell
 
 "underline spelling errors instead of highlight
 hi clear SpellBad
