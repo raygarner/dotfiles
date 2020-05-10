@@ -1,6 +1,9 @@
 "brave"
 	Mod1 + q
 
+"thunderbird"
+    Mod1 + e
+
 "cd /home/ray/media/pics/screenshots && scrot -p"
 	Print
 
