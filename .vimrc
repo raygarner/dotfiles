@@ -106,15 +106,19 @@ au BufNewFile,BufRead *.tex nnoremap ;c a\cite{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;i a\emph{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;ag a\newglossaryentry{}{name=<++>, description={<++>}}<Esc>5ba
 au BufNewFile,BufRead *.tex nnoremap ;gl a\gls{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;Gl a\Gls{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;na a\newacronym{}{<++>}{<++>}<Esc>ba
 au BufNewFile,BufRead *.tex nnoremap ;al a\acrlong{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;as a\acrshort{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;af a\acrfull{} <++><Esc>2ba
 
 "bib macros
 au BufNewFile,BufRead *.bib nnoremap ;b a@book{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>publisher = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 au BufNewFile,BufRead *.bib nnoremap ;a a@article{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>journal = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 au BufNewFile,BufRead *.bib nnoremap ;p a@phdthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
-au BufNewFile,BufRead *.bib nnoremap ;m a@mastersthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
+au BufNewFile,BufRead *.bib nnoremap ;ma a@mastersthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
+au BufNewFile,BufRead *.bib nnoremap ;mi a@misc{,<Enter><Tab>title = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+
 
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
