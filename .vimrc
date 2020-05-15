@@ -111,6 +111,8 @@ au BufNewFile,BufRead *.tex nnoremap ;na a\newacronym{}{<++>}{<++>}<Esc>ba
 au BufNewFile,BufRead *.tex nnoremap ;al a\acrlong{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;as a\acrshort{} <++><Esc>2ba
 au BufNewFile,BufRead *.tex nnoremap ;af a\acrfull{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;re a\ref{} <++><Esc>2ba
+au BufNewFile,BufRead *.tex nnoremap ;la a\label{} <++><Esc>2ba
 
 "bib macros
 au BufNewFile,BufRead *.bib nnoremap ;b a@book{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>publisher = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
@@ -118,6 +120,7 @@ au BufNewFile,BufRead *.bib nnoremap ;a a@article{,<Enter><Tab>title = "<++>",<E
 au BufNewFile,BufRead *.bib nnoremap ;p a@phdthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 au BufNewFile,BufRead *.bib nnoremap ;ma a@mastersthesis{,<Enter><Tab>title = "<++>",<Enter>author = "<++>",<Enter>year = "<++>",<Enter>school = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>8kwa
 au BufNewFile,BufRead *.bib nnoremap ;mi a@misc{,<Enter><Tab>title = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
+au BufNewFile,BufRead *.bib nnoremap ;mn a@Xmanual{,<Enter><Tab>title = "<++>",<Enter>year = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>6kwa
 
 
 "html macros
