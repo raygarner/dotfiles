@@ -83,7 +83,7 @@ nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l<Esc>:noh<Enter>a
 
 nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 
-nnoremap ;sc a#!/bin/sh<Ener><Esc>:w<Enter>:e<Enter>i
+nnoremap ;sc a#!/bin/sh<Enter><Esc>:w<Enter>:e<Enter>i
 nnoremap ;r :w<Enter>:e<Enter>
 
 "tex macros
