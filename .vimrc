@@ -181,5 +181,8 @@ au BufNewFile,BufRead *.sh nnoremap ;fl afor in <++>; do<Enter><Tab><++><Enter><
 au BufNewFile,BufRead *.sh nnoremap ;sw acase  in<Enter><Tab><++>)<Enter><Tab><++><Enter>;;<Enter><Backspace><++>)<Enter><Tab><++><Enter>;;<Enter><Backspace><Enter>*)<Enter><Backspace>esac<Esc>9kla
 au BufNewFile,BufRead *.sh nnoremap ;ca a)<Enter><Tab><++><Enter><Enter>;;<Enter><Backspace><++><Esc>4ki
 
+"haskell macros
+au BufNewFile,BufRead *.hs nnoremap ;c i--<Esc>0
+
 "cursor fix to stop vi mode in shell messing vim cursor up
 normal i
