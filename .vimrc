@@ -168,7 +168,7 @@ au BufNewFile,BufRead *.vim,.vimrc nnoremap ;e a<\Esc><Esc>bhxwa
 au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
 "plan file macros
-au BufNewFile,BufRead .plan inoremap <Enter> <Enter>*<Space>
+au BufNewFile,BufRead .plan inoremap <Enter> <Enter>-<Space>
 au BufNewFile,BufRead .plan nnoremap o o-<Space>
 au BufNewFile,BufRead .plan nnoremap O O-<Space>
 au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
