@@ -61,7 +61,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 "delete trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+"autocmd BufWritePre * %s/\s\+$//e
 
 "set background=dark
 "colorscheme gruvbox-material
@@ -169,8 +169,8 @@ au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnorem
 
 "plan file macros
 au BufNewFile,BufRead .plan inoremap <Enter> <Enter>*<Space>
-au BufNewFile,BufRead .plan nnoremap o o*<Space>
-au BufNewFile,BufRead .plan nnoremap O O*<Space>
+au BufNewFile,BufRead .plan nnoremap o o-<Space>
+au BufNewFile,BufRead .plan nnoremap O O-<Space>
 au BufNewFile,BufRead .plan nnoremap ;n ggvG$c*<Space>
 
 "shell script macros
