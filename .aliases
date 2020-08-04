@@ -3,7 +3,7 @@ alias ls='ls --color=always'
 alias pm=pulsemixer
 alias finger='pinky -l'
 alias plan='vim /home/ray/.plan'
-alias todo='vim /home/ray/.plan'
+alias todo='calcurse'
 alias xrc='vim /home/ray/dotfiles/.xinitrc'
 alias vrc='vim /home/ray/dotfiles/.vimrc'
 alias xkb='vim /home/ray/dotfiles/.xbindkeysrc'
