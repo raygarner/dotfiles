@@ -3,8 +3,6 @@ alias ls='ls --color=always'
 alias pm=pulsemixer
 alias finger='pinky -l'
 alias cal='calcurse'
-
-
 alias rs='source /home/ray/dotfiles/.zshrc'
 alias z='zathura'
 alias sc='shellcheck'
