@@ -62,7 +62,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 source $HOME/.aliases
 
 #set auto cd
-#set -o AUTO_CD
+set -o AUTO_CD
 
 #auto ls on cd
 chpwd() ls
