@@ -24,7 +24,7 @@ _comp_options+=(globdots)		# Include hidden files.
 export EDITOR=vim
 
 #set browser
-export BROWSER=brave
+export BROWSER=surf
 
 # vi mode
 bindkey -v
