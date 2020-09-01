@@ -168,10 +168,10 @@ au BufNewFile,BufRead *.vim,.vimrc nnoremap ;e a<\Esc><Esc>bhxwa
 au BufNewFile,BufRead *.vim,.vimrc nnoremap ;kb aau BufNewFile,BufRead *. nnoremap ;<++><Esc>3bla
 
 "plan file macros
-au BufNewFile,BufRead .plan inoremap <Enter> <Enter>-<Space>
-au BufNewFile,BufRead .plan nnoremap o o-<Space>
-au BufNewFile,BufRead .plan nnoremap O O-<Space>
-au BufNewFile,BufRead .plan nnoremap ;n ggvG$c-<Space>
+"au BufNewFile,BufRead .plan inoremap <Enter> <Enter>-<Space>
+"au BufNewFile,BufRead .plan nnoremap o o-<Space>
+"au BufNewFile,BufRead .plan nnoremap O O-<Space>
+"au BufNewFile,BufRead .plan nnoremap ;n ggvG$c-<Space>
 
 "shell script macros
 au BufNewFile,BufRead *.sh nnoremap ;if aif [ ]; then<Enter><Tab><++><Enter><Enter><Backspace>fi<Enter><Enter><++><Esc>5k$2bi
