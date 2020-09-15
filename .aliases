@@ -33,3 +33,8 @@ alias zrc='vim /home/ray/dotfiles/.zshrc'
 alias al='vim /home/ray/dotfiles/.aliases'
 alias bib='vim /home/ray/Documents/latex/uni.bib'
 alias zp='vim /home/ray/dotfiles/.zprofile'
+
+alias s='sudo pacman -S'
+alias rns='sudo pacman -Rns'
+alias syu='sudo pacman -Syu'
+alias ss='sudo pacman -Ss'
