@@ -18,7 +18,6 @@ mons -s
 sudo xset s off -dpms
 
 xwallpaper --zoom "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ | shuf -n 1)"
-#xwallpaper --zoom /home/ray/media/pics/black.jpeg
 
 exec dwm
 
