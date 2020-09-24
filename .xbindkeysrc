@@ -20,5 +20,10 @@
 	Mod1 + z
 
 "pape"
-   Mod1 + o
+    Mod1 + o
 
+"mons -m"
+    Mod1 + w
+
+"setxkbmap -option caps:escape"
+    Mod1 + e
