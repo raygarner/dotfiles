@@ -11,7 +11,7 @@ alias m='mpv'
 alias news='newsboat'
 alias wttr='curl wttr.in'
 alias moon='curl wttr.in/moon'
-alias tp='iv /home/ray/Downloads/topsters2.png'
+alias tp='iv /home/ray/Downloads/topsters2.jpg'
 
 alias dls='cd /home/ray/Downloads'
 alias mus='cd /home/ray/media/audio/music'

@@ -1,3 +1,7 @@
+call plug#begin('~/.vim/plugged')
+Plug 'leanprover/lean.vim'
+call plug#end()
+
 filetype on
 set number
 syntax on
@@ -186,3 +190,5 @@ au BufNewFile,BufRead *.hs nnoremap ;c i--<Esc>0
 
 "cursor fix to stop vi mode in shell messing vim cursor up
 normal i
+
+
