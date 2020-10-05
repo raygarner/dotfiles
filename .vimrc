@@ -1,6 +1,6 @@
-call plug#begin('~/.vim/plugged')
-Plug 'leanprover/lean.vim'
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"Plug 'leanprover/lean.vim'
+"call plug#end()
 
 filetype on
 set number
