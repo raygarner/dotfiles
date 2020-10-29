@@ -27,3 +27,6 @@
 
 "setxkbmap -option caps:escape"
     Mod1 + e
+
+"xwallpaper --zoom ~/media/pics/black.jpeg"
+    Mod1 + v
