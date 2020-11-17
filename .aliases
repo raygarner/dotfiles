@@ -22,7 +22,7 @@ alias pics='cd /home/ray/media/pics'
 alias papes='cd /home/ray/media/pics/papes'
 alias dotfiles='cd /home/ray/dotfiles'
 alias tek='cd /home/ray/Documents/latex'
-alias src='cd /home/ray/src'
+#alias src='cd /home/ray/src'
 alias scripts='cd /home/ray/scripts'
 
 alias plan='vim /home/ray/.plan'

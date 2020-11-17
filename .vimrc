@@ -71,7 +71,9 @@ map <C-l> <C-w>l
 "set background=dark
 "colorscheme gruvbox-material
 
-set splitbelow splitright "split puts window on right
+"split puts window on right
+set splitbelow 
+set splitright 
 
 set wildmode=longest,list,full "enable autocomplete
 

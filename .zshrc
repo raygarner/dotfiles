@@ -98,3 +98,7 @@ zstyle ':vcs_info:git:*' formats '%b'
 
 # Load zsh-syntax-highlighting; should be last.
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# Created by `userpath` on 2020-11-05 16:23:11
+#export PATH="$PATH:/home/ray/.local/bin"
+#export PATH="$PATH:/home/ray/.elan/bin"
