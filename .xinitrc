@@ -1,6 +1,7 @@
 xbindkeys
 
 setxkbmap -option caps:escape
+setxkbmap -option escape:caps
 
 loadkeys uk
 
