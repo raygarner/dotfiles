@@ -14,6 +14,7 @@ set autoindent
 set spelllang=en_gb
 set hlsearch
 set incsearch
+set ignorecase
 
 autocmd FileType make setlocal noexpandtab
 
