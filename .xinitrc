@@ -18,7 +18,7 @@ mons -s
 
 sudo xset s off -dpms
 
-xwallpaper --zoom "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ | shuf -n 1)"
+xwallpaper --focus "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ | shuf -n 1)"
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
