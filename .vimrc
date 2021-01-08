@@ -96,6 +96,9 @@ nnoremap <Backspace><Backspace> <Esc>?<--><Enter>"_c4l<Esc>:noh<Enter>a
 nnoremap ;sc a#!/bin/sh<Enter><Esc>:w<Enter>:e<Enter>i
 nnoremap ;r :w<Enter>:e<Enter>
 
+"groff_ms macros
+au BufNewFile,BufRead *.ms nnoremap ;p a.PSPIC -C .eps 3i<Esc>3bi
+
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$ba
 au BufNewFile,BufRead *.tex nnoremap ;up a\usepackage{}<Esc>i
@@ -132,7 +135,6 @@ au BufNewFile,BufRead *.bib nnoremap ;ma a@mastersthesis{,<Enter><Tab>title = "<
 au BufNewFile,BufRead *.bib nnoremap ;mi a@misc{,<Enter><Tab>title = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>5kwa
 au BufNewFile,BufRead *.bib nnoremap ;mn a@Xmanual{,<Enter><Tab>title = "<++>",<Enter>year = "<++>",<Enter><++><Enter><Backspace>}<Enter><Enter><++><Esc>6kwa
 
-
 "html macros
 au BufNewFile,BufRead *.html nnoremap ;n a<!DOCTYPE html><Enter><html><Enter><Tab><head><Enter><Tab><title></title><Enter><link rel="stylesheet" href="styles.css"><Enter><Backspace></head><Enter><Enter><body><Enter><Tab><++><Enter><Backspace></body><Enter><Backspace></html><Esc>7k3wa
 au BufNewFile,BufRead *.html nnoremap ;p a<p></p><Esc>2ba
@@ -166,7 +168,6 @@ au BufNewFile,BufRead *.c nnoremap ;en atypedef enum  {<Enter><Tab><++><Enter><E
 au BufNewFile,BufRead *.c nnoremap ;un atypedef union  {<Enter><Tab><++><Enter><Enter><Backspace>} <++>;<Enter><Enter><++><Esc>5k2whi
 au BufNewFile,BufRead *.c nnoremap ;cm 0i/* <Esc>$a */<Esc>
 au BufNewFile,BufRead *.c nnoremap ;uc 03x$2h3x
-
 
 "vimscript macros
 "keypress keyword shortcuts
