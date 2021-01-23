@@ -98,6 +98,7 @@ nnoremap ;r :w<Enter>:e<Enter>
 
 "groff_ms macros
 au BufNewFile,BufRead *.ms nnoremap ;p a.PSPIC -C .eps 3i<Esc>3bi
+au BufNewFile,BufRead *.ms nnoremap ;su a\*{\*} <++><Esc>b4hi
 
 "tex macros
 au BufNewFile,BufRead *.tex nnoremap ;b a\begin{}<Enter><Enter><--><Enter><Enter>\end{<++>}<Enter><Enter><++><Esc>6k$ba
