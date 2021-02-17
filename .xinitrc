@@ -22,7 +22,6 @@ xwallpaper --focus "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ 
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-monerod
 
 exec dwm
 
