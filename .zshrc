@@ -8,7 +8,8 @@ PS1="%B%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%M %{$fg[white]%}%~ %{$res
 #PS1="%B%{$fg[green]%}%n %b%{$fg[white]%}%~ %{$reset_color%}$ "
 #PS1="%B%{$fg[green]%}%n %b%{$fg[white]%}%~ %{$reset_color%}$ "
 #PS1="%{$fg[white]%}%~ %{$reset_color%}$𝄞𝄢∴:%b "
-PS1="%{$fg[white]%}%~ %{$reset_color%}$%b "
+#PS1="%{$fg[white]%}%~ %{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%M %{$fg[white]%}%~ %{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
