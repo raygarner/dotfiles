@@ -6,6 +6,9 @@ autoload -U colors && colors
 #PS1="%B%{$fg[blue]%}%n%{$reset_color%}@%{$fg[blue]%}%M %{$fg[white]%}%d %{$reset_color%}$%b "
 PS1="%B%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%M %{$fg[white]%}%~ %{$reset_color%}$%b "
 #PS1="%B%{$fg[green]%}%n %b%{$fg[white]%}%~ %{$reset_color%}$ "
+#PS1="%B%{$fg[green]%}%n %b%{$fg[white]%}%~ %{$reset_color%}$ "
+#PS1="%{$fg[white]%}%~ %{$reset_color%}$𝄞𝄢∴:%b "
+PS1="%{$fg[white]%}%~ %{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -75,6 +78,9 @@ setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 # PROMPT=\$vcs_info_msg_0_'%# '
 zstyle ':vcs_info:git:*' formats '%b'
+
+#cabal for haskell libraries 
+export PATH="$HOME/.cabal/bin:$PATH"
 
 # Use lf to switch directories and bind it to ctrl-o
 #lfcd () {
